@@ -18,8 +18,8 @@ footer {
     text-align: right;
 }
 section {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 20px;
     background-color: rgba(245, 245, 245, 0.4);
     border: 2px salmon solid;
@@ -47,6 +47,10 @@ h2 {
     margin-bottom: 15px;
 }
 .name {
+    
+}
+
+.nameContainer {
     position: absolute;
     left: 20%;
     width: 245px;
@@ -57,10 +61,11 @@ h2 {
     background-color: rgb(197, 127, 119);
     color: white;
 }
+
 .linksContainer {
     position: absolute;
     right: 10px;
-    top: 34px;
+    top: 30px;
     padding: 20px;
 }
 .leftLink {
@@ -103,10 +108,11 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 #aboutPic {
-    height: 300px;
-    width: 400px;
+    height: 400px;
+    width: 539px;
     float: left;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     border: 2px salmon solid;
     border-radius: 5px;
 }
@@ -148,8 +154,68 @@ h2 {
 
 @media only screen and (max-width: 768px) and (min-width: 640px) {
 
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }
 
 @media only screen and (max-width: 640px) {
+    
+    section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .banner {
+        position: static;
+        padding: 0;
+    }
+    .mediaHeader {
+        margin-bottom: 40px;
+    }
+    .mediaFooter {
+        margin-top: 40px;
+        bottom: 0;
+        padding-top: 25px;
+    }
+    .contactFooter {
+        position: relative;
+    }
+    .nameContainer {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid black;
+        border-radius: unset;
+        padding-top: 10px;
+    }
+    .linksContainer {
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 30px;
+        width: 100%;
+        padding: 0;
+        align-content: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .leftLink {
+        border: none;
+    }
+    #aboutPic {
+        width: 100%;
+        height: auto;
+    }
 
 }
