@@ -95,9 +95,13 @@ h2 {
     height: 25px;
 }
 
+.portfolioSection {
+    width: auto;
+}
+
 .portfolioPics {
-    height: 275px;
-    width: 275px;
+    height: 200px;
+    width: 200px;
     border: 2px solid white;
     border-radius: 6px;
     margin: 10px;
@@ -175,10 +179,15 @@ h2 {
 @media only screen and (min-width: 768px) {}
 
 @media only screen and (max-width: 768px) and (min-width: 640px) {
+
     section {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
+    .nameContainer {
+        left: 10%;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
