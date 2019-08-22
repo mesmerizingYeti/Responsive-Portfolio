@@ -1,15 +1,8 @@
-.banner {
-    background-color: rgba(255, 255, 255, 0.75);
-    margin: 0px;
-    height: 80px;
-    position: fixed;
-    left: 0;
-    right: 0;
-}
 header {
     border-bottom: 3px solid black;
     top: 0;
 }
+
 footer {
     border-top: 3px solid black;
     bottom: 0;
@@ -17,6 +10,7 @@ footer {
     padding-right: 30px;
     text-align: right;
 }
+
 section {
     margin-left: 50px;
     margin-right: 50px;
@@ -26,17 +20,26 @@ section {
     border-radius: 16px;
     overflow: auto;
 }
+
+html {
+    height: 100%;
+}
+
 body {
     overflow-y: scroll;
     background-image: url("../images/9eafa10d.png");
+    position: relative;
+    min-height: 100%;
     margin: 0;
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
 h1 {
     font-size: 2em;
     font-family: 'Acme', sans-serif;
 }
+
 h2 {
     text-align: left;
     font-size: 2.2em;
@@ -46,8 +49,14 @@ h2 {
     border-bottom: 2px solid salmon;
     margin-bottom: 15px;
 }
-.name {
-    
+
+.banner {
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 0px;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .nameContainer {
@@ -68,20 +77,24 @@ h2 {
     top: 30px;
     padding: 20px;
 }
+
 .leftLink {
     border-right: 1px solid darkgray;
     padding: 5px;
     font-family: 'Acme', sans-serif;
 }
+
 .contact {
     padding: 5px;
     font-family: 'Acme', sans-serif;
 }
+
 .inputs {
     margin: 5px;
     width: 97%;
     height: 25px;
 }
+
 .portfolioPics {
     height: 275px;
     width: 275px;
@@ -91,6 +104,7 @@ h2 {
     float: left;
     background-size: cover;
 }
+
 .portfolioLinks {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -104,9 +118,11 @@ h2 {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
+
 .inputTitle {
     font-family: 'Poppins', sans-serif;
 }
+
 #aboutPic {
     height: 400px;
     width: 539px;
@@ -116,75 +132,75 @@ h2 {
     border: 2px salmon solid;
     border-radius: 5px;
 }
+
 #aboutText {
     font-family: 'Roboto', sans-serif;
 }
+
 #message {
     margin: 5px;
     width: 97%;
 }
+
 #submit {
     display: block;
     margin-top: 5px;
     font-family: 'Poppins', sans-serif;
 }
+
 #firstWheel {
     background-image: url("../images/FirstWheel.jpg");
 }
+
 #christopher {
     background-image: url("../images/Christopher.jpg");
 }
+
 #declaration {
     background-image: url("../images/Declaration.jpg");
 }
+
 #moon {
     background-image: url("../images/MoonLanding.jpg");
 }
+
 #johnny5 {
     background-image: url("../images/Johnny5.jpg");
 }
+
 #skynet {
     background-image: url("../images/Skynet.jpg");
 }
 
-@media only screen and (min-width: 768px) {
-
-
-}
+@media only screen and (min-width: 768px) {}
 
 @media only screen and (max-width: 768px) and (min-width: 640px) {
-
     section {
         margin-left: 20px;
         margin-right: 20px;
     }
-    
 }
 
 @media only screen and (max-width: 640px) {
-    
     section {
         margin-left: 20px;
         margin-right: 20px;
     }
     body {
         padding-top: 0;
-        padding-bottom: 0;
     }
     .banner {
-        position: static;
+        position: relative;
         padding: 0;
     }
     .mediaHeader {
         margin-bottom: 40px;
     }
     .mediaFooter {
+        position: absolute;
         margin-top: 40px;
         bottom: 0;
         padding-top: 25px;
-    }
-    .contactFooter {
-        position: relative;
     }
     .nameContainer {
         display: block;
@@ -217,5 +233,4 @@ h2 {
         width: 100%;
         height: auto;
     }
-
 }
