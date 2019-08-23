@@ -1,6 +1,7 @@
 header {
     border-bottom: 3px solid black;
     top: 0;
+    z-index: 1;
 }
 
 footer {
@@ -61,7 +62,7 @@ h2 {
 
 .nameContainer {
     position: absolute;
-    left: 20%;
+    left: 10%;
     width: 245px;
     top: 33px;
     padding: 5px;
@@ -189,6 +190,10 @@ h2 {
     }
     .nameContainer {
         left: 10%;
+    }
+    #aboutPic {
+        height: auto;
+        width: 463px;
     }
 
 }
